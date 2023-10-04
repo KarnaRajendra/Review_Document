@@ -1,0 +1,55 @@
+Functional interfaces:
+
+--> java.util.function package 
+--> implemented use annotation @FunctionalInterface (single Abstract method)
+--> To implement this interface, we can create a class that implements it:
+--> support the lambda expression. 
+
+@Functional Interface
+public interface{
+void();
+}
+
+
+Predicate:
+
+--> accept one argument, T type of input to predicate 
+-->  interfaces also have extension Predicate – BiPredicate 	
+--> then return boolean .
+
+predicate<T>
+
+Stream: 
+
+--> intermediate operation creates a new stream,
+--> stores the provided operation/function 
+--> pipelinepipeline is nothing but combined intermediate and terminal operations 
+--> it used and filtering, sorting, element transformation (mapping)
+
+
+
+
+
+function: simple generals case of lambda is a funtional interface with method 
+that receices one value and returns another function interface 
+its mentioned as map fucntion 
+
+
+suppliers: its functional interface is yet another fucntion  specialization that does not take any arguments.
+ 
+its a lazy generation of value and define as function that square a double value. it will not receive a value itself but suppiler of this value 
+
+public double squareLazy(Supplier<Double> lazyValue) {
+    return Math.pow(lazyValue.get(), 2);
+}
+
+
+
+Consumers: As opposed to the supplier, the consumer accepts a argument and return nothing 
+   and specilized ver. of the consumer double, int, long reveive primitives bi consumer interface 
+
+
+map<String,integer>ages=new hashmap<>();
+ ages.put ("john","25")
+ ages.put ("Freedy","24")
+ ages.put ("samuel","30")
